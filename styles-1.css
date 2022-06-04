@@ -1,10 +1,149 @@
-.searchbar{
-        width: 200px;
-        -webkit-transition: width 0.4s ease-in-out;
-        transition: width 0.4s ease-in-out;
+body,ul,li,h1,h2,a {
+  margin: 0;
+  padding: 0;
+  font-family: Arial, Helvetica, sans-serif;
+  /* text-align: center; */
+  background-image: url("https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRWbSf6xvfQXq53uCmD7pLGhYZstZ-y8ngnzw&usqp=CAU");
+
 }
-      
-      /* When the input field gets focus, change its width to 100% */
-.searchbar:focus {
-        width: 100%;
+
+/* header{
+    background-color: #D9D9D9;
+    padding: 0px;
+    right: 100px;
+    text-align: right;
+    position: absolute;
+    width: 100%;
+    z-index: 0;
+    top: 0;
+    left: 0;
+} */
+
+.nav-wrapper {
+  display: flex;
+  justify-content: space-between;
+  padding: 10px;
+
+}
+
+.left-side {
+  display: flex;
+}
+
+.nav-wrapper .left-side>div {
+  margin-right: 20px;
+  text-transform: uppercase;
+  font-size: 1.2rem;
+}
+
+.nav-link-wrapper {
+  height: 22px;
+  border-bottom: 1px solid transparent;
+  transition: border-bottom 0.5s;
+}
+
+.active-nav-link {
+  border-bottom: 1px solid black;
+}
+
+.active-nav-link a {
+  color: black !important;
+}
+
+.nav-link-wrapper a {
+  color: #8a8a8a;
+  text-decoration: none;
+  transition: color 0.5s;
+}
+
+.nav-link-wrapper:hover {
+  border-bottom: 1px solid black;
+}
+
+.nav-link-wrapper a:hover {
+  color: black;
+}
+
+.aboutmelink {
+  text-decoration: none;
+}
+
+
+
+.heading {
+  padding-left: 60px;
+  color: #5f5f5f
+}
+
+.searcher {
+  position: relative;
+  display: flex;
+
+}
+
+.Search {
+  /* background-color: #D9D9D9; */
+  /* background-image: url("https://wallpaperaccess.com/full/3072517.jpg"); */
+  background-repeat: no-repeat;
+  background-position: center;
+  position: relative;
+  padding-left: 60px;
+  padding-bottom: 30px;
+  /* margin: 5px; */
+  text-align: left;
+}
+
+
+#searchbar {
+  background-color: #dadada;
+  color: #242424;
+  font-size: 25px;
+  border: 1px solid #242424;
+  border-radius: 5px;
+
+}
+
+input[type=text] {
+  width: 220px;
+  -webkit-transition: width 0.4s ease-in-out;
+  transition: width 0.4s ease-in-out;
+}
+
+input:focus {
+  outline: none;
+  width: 200%;
+}
+
+ul {
+  list-style-type: none;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  place-items: start;
+
+}
+
+#Phones a img {
+  left: 20px;
+  /* padding: 44px; */
+}
+
+.links {
+  display: block;
+  color: #242424;
+  text-decoration: none;
+
+}
+
+.price {
+  color: rgb(165, 80, 80);
+}
+
+.phoneimg {
+  padding: 65px;
+  filter: drop-shadow(2px 2px 2px #8a8a8a);
+}
+
+.phonetext {
+  padding: 10px;
+  text-align: center;
 }

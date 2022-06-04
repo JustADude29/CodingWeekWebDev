@@ -1,29 +1,684 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <!-- <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0"> -->
-    <link rel="stylesheet1" href="styles-1.css">
+    <link rel="stylesheet" href="styles-1.css">
     <title>Search</title>
+    <script src="list.js"></script>
 </head>
 <body>
-    <header>
-        <h1>Search for your desired Product</h1>
-    </header>
+    <div class="holder">
+        <header>
+            <h3>
+                <div class="nav-wrapper">
+                    <div class="left-side">
+                        <div class="nav-link-wrapper active-nav-link">
+                            <a href="home.html">Catalog</a>
+                        </div>
+                
+                        <div class="nav-link-wrapper">
+                            <a href="aboutme.html">About Me</a>
+                        </div>
+                    </div>
+                    <div class="right-side">
+                        <div class="logo">
+                            <img src="https://www.iitg.ac.in/stud/gymkhana/technical/assets/img/resources/codingclubLogo.png"
+                                width="70px" height="75px" alt="Coding week">
+                        </div>
+                    </div>
+                </div>
+            </h3>
+        </header> 
+        <div class="searcher">
+            <section class="Search">
+                <input type="text" id="searchbar" onkeyup="searchfunction()" placeholder="search you product.." title="Search phone">
+            </section>
+        </div>
+        <div class="heading"><h2>Product Listings:</h2></div>
+        <section class="List">
+                
+                <ul id="Phones">
+                    <li>
+                        <div class="idk2">
+                            <div class="phoneimg">
+                                <a class="imglink" href="#phone1>">
+                                    <img src="https://dummyjson.com/image/i/products/1/thumbnail.jpg">
+                                </a>
+                            </div>
+                            <div class="phonetext">
+                                <h2>
+                                    <a class="links" href="#phone1">
+                                        <span class="productname">
+                                            iPhone9
+                                        </span>
+                                        <span class="price">
+                                            <br><small><small>Rating: 4.69</small><br>Price=$549<br></small>
 
-    <section class="Search">
-            <input type="text" id="searchbar" onkeyup="searchfunction()" placeholder="search you product.." title="Search phone">
+                                        </span>
+                                    </a>
+                                </h2>
+                            </div>
+                        </div>  
+                    </li>
 
-            <ul id="Phones">
-                <li><a id="" href="#phone1">Phone1</a></li>
-                <li><a href="#phone2">Phone2</a></li>
-                <li><a href="#phone3">Phone3</a></li>
-                <li><a href="#phone4">Phone4</a></li>
-            </ul>
+                    <li>
+                        <div class="phoneimg">
+                            <a class="imglink" href="#phone2>">
+                                <img src="https://dummyjson.com/image/i/products/2/thumbnail.jpg">
+                            </a>
+                        </div>
+                        <div class="phonetext">
+                            <h2>
+                                <a class="links" href="#phone2">
+                                    <span class="productname">
+                                        iPhone X
+                                    </span>
+                                    <span class="price">
+                                        <br><small><small>Rating: 4.44</small><br>Price=$549<br></small>
+
+                                    </span>
+                                </a>
+                            </h2>
+                        </div>
+                    </li>
+                    
+                    <li>
+                        <div class="phoneimg">
+                            <a class="imglink" href="#phone3>">
+                                <img src="https://dummyjson.com/image/i/products/3/thumbnail.jpg">
+                            </a>
+                        </div>
+                        <div class="phonetext">
+                            <h2>
+                                <a class="links" href="#phone1">
+                                    <span class="productname">
+                                        Samsung Universe 9
+                                    </span>
+                                    <span class="price">
+                                        <br><small><small>Rating: 4.09</small><br>Price=$549<br></small>
+
+                                    </span>
+                                </a>
+                            </h2>
+                        </div>
+                    </li>
+
+                    <li>
+                        <div class="phoneimg">
+                            <a class="imglink" href="#phone4>">
+                                <img src="https://dummyjson.com/image/i/products/4/thumbnail.jpg">
+                            </a>
+                        </div>
+                        <div class="phonetext">
+                            <h2>
+                                <a class="links" href="#phone4">
+                                    <span class="productname">
+                                        OPPOF19
+                                    </span>
+                                    <span class="price">
+                                        <br><small><small>Rating: 4.3</small><br>Price=$549<br></small>
+
+                                    </span>
+                                </a>
+                            </h2>
+                        </div>
+                    </li>
+
+                    <li>
+                        <div class="phoneimg">
+                            <a class="imglink" href="#phone5>">
+                                <img src="https://dummyjson.com/image/i/products/5/thumbnail.jpg">
+                            </a>
+                        </div>
+                        <div class="phonetext">
+                            <h2>
+                                <a class="links" href="#phone5">
+                                    <span class="productname">
+                                        Huawei P30
+                                    </span>
+                                    <span class="price">
+                                        <br><small><small>Rating: 4.09</small><br>Price=$549<br></small>
+
+                                    </span>
+                                </a>
+                            </h2>
+                        </div>
+                    </li>
+
+                    <li>
+                        <div class="phoneimg">
+                            <a class="imglink" href="#phone6>">
+                                <img src="https://dummyjson.com/image/i/products/6/thumbnail.png">
+                            </a>
+                        </div>
+                        <div class="phonetext">
+                            <h2>
+                                <a class="links" href="#phone6">
+                                    <span class="productname">
+                                        MacBook Pro
+                                    </span>
+                                    <span class="price">
+                                        <br><small><small>Rating: 4.57</small><br>Price=$549<br></small>
+
+                                    </span>
+                                </a>
+                            </h2>
+                        </div>
+                    </li>
+
+                    <li>
+                        <div class="phoneimg">
+                            <a class="imglink" href="#phone7>">
+                                <img src="https://dummyjson.com/image/i/products/7/thumbnail.jpg">
+                            </a>
+                        </div>
+                        <div class="phonetext">
+                            <h2>
+                                <a class="links" href="#phone7">
+                                    <span class="productname">
+                                        Samsung Galaxy Book
+                                    </span>
+                                    <span class="price">
+                                        <br><small><small>Rating: 4.25</small><br>Price=$549<br></small>
+
+                                    </span>
+                                </a>
+                            </h2>
+                        </div>
+                    </li>
+
+                    <li>
+                        <div class="phoneimg">
+                            <a class="imglink" href="#phone8>">
+                                <img src="https://dummyjson.com/image/i/products/8/thumbnail.jpg">
+                            </a>
+                        </div>
+                        <div class="phonetext">
+                            <h2>
+                                <a class="links" href="#phone8">
+                                    <span class="productname">
+                                        Microsoft Surface Laptop 4
+                                    </span>
+                                    <span class="price">
+                                        <br><small><small>Rating: 4.43</small><br>Price=$549<br></small>
+
+                                    </span>
+                                </a>
+                            </h2>
+                        </div>
+                    </li>
+
+                    <li>
+                        <div class="phoneimg">
+                            <a class="imglink" href="#phone9>">
+                                <img src="https://dummyjson.com/image/i/products/9/thumbnail.jpg">
+                            </a>
+                        </div>
+                        <div class="phonetext">
+                            <h2>
+                                <a class="links" href="#phone9">
+                                    <span class="productname">
+                                        Infinix INBOOK
+                                    </span>
+                                    <span class="price">
+                                        <br><small><small>Rating: 4.54</small><br>Price=$549<br></small>
+
+                                    </span>
+                                </a>
+                            </h2>
+                        </div>
+                    </li>
+
+                    <li>
+                        <div class="phoneimg">
+                            <a class="imglink" href="#phone10>">
+                                <img src="https://dummyjson.com/image/i/products/10/thumbnail.jpeg">
+                            </a>
+                        </div>
+                        <div class="phonetext">
+                            <h2>
+                                <a class="links" href="#phone10">
+                                    <span class="productname">
+                                        HP Pavilion 15-DK1056WM
+                                    </span>
+                                    <span class="price">
+                                        <br><small><small>Rating: 4.43</small><br>Price=$549<br></small>
+
+                                    </span>
+                                </a>
+                            </h2>
+                        </div>
+                    </li>
+
+                    <li>
+                        <div class="phoneimg">
+                            <a class="imglink" href="#phone11>">
+                                <img src="https://dummyjson.com/image/i/products/11/thumbnail.jpg">
+                            </a>
+                        </div>
+                        <div class="phonetext">
+                            <h2>
+                                <a class="links" href="#phone11">
+                                    <span class="productname">
+                                        Perfume Oil
+                                    </span>
+                                    <span class="price">
+                                        <br><small><small>Rating: 4.26</small><br>Price=$549<br></small>
+
+                                    </span>
+                                </a>
+                            </h2>
+                        </div>
+                    </li>
+
+                    <li>
+                        <div class="phoneimg">
+                            <a class="imglink" href="#phone12>">
+                                <img src="https://dummyjson.com/image/i/products/12/thumbnail.jpg">
+                            </a>
+                        </div>
+                        <div class="phonetext">
+                            <h2>
+                                <a class="links" href="#phone12">
+                                    <span class="productname">
+                                        Brown Perfume
+                                    </span>
+                                    <span class="price">
+                                        <br><small><small>Rating: 4</small><br>Price=$549<br></small>
+
+                                    </span>
+                                </a>
+                            </h2>
+                        </div>
+                    </li>
+
+                    <li>
+                        <div class="phoneimg">
+                            <a class="imglink" href="#phone13>">
+                                <img src="https://dummyjson.com/image/i/products/13/thumbnail.webp">
+                            </a>
+                        </div>
+                        <div class="phonetext">
+                            <h2>
+                                <a class="links" href="#phone13">
+                                    <span class="productname">
+                                        Fog Scent Xpressio Perfume
+                                    </span>
+                                    <span class="price">
+                                        <br><small><small>Rating: 4.59</small><br>Price=$549<br></small>
+
+                                    </span>
+                                </a>
+                            </h2>
+                        </div>
+                    </li>
+
+                    <li>
+                        <div class="phoneimg">
+                            <a class="imglink" href="#phone14>">
+                                <img src="https://dummyjson.com/image/i/products/14/thumbnail.jpg">
+                            </a>
+                        </div>
+                        <div class="phonetext">
+                            <h2>
+                                <a class="links" href="#phone14">
+                                    <span class="productname">
+                                        Non-Alcoholic Concentrated Perfume Oil
+                                    </span>
+                                    <span class="price">
+                                        <br><small><small>Rating: 4.21</small><br>Price=$549<br></small>
+
+                                    </span>
+                                </a>
+                            </h2>
+                        </div>
+                    </li>
+
+                    <li>
+                        <div class="phoneimg">
+                            <a class="imglink" href="#phone15>">
+                                <img src="https://dummyjson.com/image/i/products/15/thumbnail.jpg">
+                            </a>
+                        </div>
+                        <div class="phonetext">
+                            <h2>
+                                <a class="links" href="#phone15">
+                                    <span class="productname">
+                                        Eau De Perfume Spray
+                                    </span>
+                                    <span class="price">
+                                        <br><small><small>Rating: 4.7</small><br>Price=$549<br></small>
+
+                                    </span>
+                                </a>
+                            </h2>
+                        </div>
+                    </li>
+
+                    <li>
+                        <div class="phoneimg">
+                            <a class="imglink" href="#phone16>">
+                                <img src="https://dummyjson.com/image/i/products/16/thumbnail.jpg">
+                            </a>
+                        </div>
+                        <div class="phonetext">
+                            <h2>
+                                <a class="links" href="#phone16">
+                                    <span class="productname">
+                                        Hyaluronic Acid Serum
+                                    </span>
+                                    <span class="price">
+                                        <br><small><small>Rating: 4.83</small><br>Price=$549<br></small>
+
+                                    </span>
+                                </a>
+                            </h2>
+                        </div>
+                    </li>
+
+                    <li>
+                        <div class="phoneimg">
+                            <a class="imglink" href="#phone17>">
+                                <img src="https://dummyjson.com/image/i/products/17/thumbnail.jpg">
+                            </a>
+                        </div>
+                        <div class="phonetext">
+                            <h2>
+                                <a class="links" href="#phone17">
+                                    <span class="productname">
+                                        Tree Oil 30ml
+                                    </span>
+                                    <span class="price">
+                                        <br><small><small>Rating: 4.52</small><br>Price=$549<br></small>
+
+                                    </span>
+                                </a>
+                            </h2>
+                        </div>
+                    </li>
+
+                    <li>
+                        <div class="phoneimg">
+                            <a class="imglink" href="#phone18>">
+                                <img src="https://dummyjson.com/image/i/products/18/thumbnail.jpg">
+                            </a>
+                        </div>
+                        <div class="phonetext">
+                            <h2>
+                                <a class="links" href="#phone18">
+                                    <span class="productname">
+                                        Oil Free Moisturizer 100ml
+                                    </span>
+                                    <span class="price">
+                                        <br><small><small>Rating: 4.56</small><br>Price=$549<br></small>
+
+                                    </span>
+                                </a>
+                            </h2>
+                        </div>
+                    </li>
+
+                    <li>
+                        <div class="phoneimg">
+                            <a class="imglink" href="#phone19>">
+                                <img src="https://dummyjson.com/image/i/products/19/thumbnail.jpg">
+                            </a>
+                        </div>
+                        <div class="phonetext">
+                            <h2>
+                                <a class="links" href="#phone19">
+                                    <span class="productname">
+                                        Skin Beauty Serum
+                                    </span>
+                                    <span class="price">
+                                        <br><small><small>Rating: 4.42</small><br>Price=$549<br></small>
+
+                                    </span>
+                                </a>
+                            </h2>
+                        </div>
+                    </li>
+
+                    <li>
+                        <div class="phoneimg">
+                            <a class="imglink" href="#phone20>">
+                                <img src="https://dummyjson.com/image/i/products/20/thumbnail.jpg">
+                            </a>
+                        </div>
+                        <div class="phonetext">
+                            <h2>
+                                <a class="links" href="#phone20">
+                                    <span class="productname">
+                                        Freckle Treatment Cream- 15gm
+                                    </span>
+                                    <span class="price">
+                                        <br><small><small>Rating: 4.09</small><br>Price=$549<br></small>
+
+                                    </span>
+                                </a>
+                            </h2>
+                        </div>
+                    </li>
+
+                    <li>
+                        <div class="phoneimg">
+                            <a class="imglink" href="#phone21>">
+                                <img src="https://dummyjson.com/image/i/products/21/thumbnail.png">
+                            </a>
+                        </div>
+                        <div class="phonetext">
+                            <h2>
+                                <a class="links" href="#phone21">
+                                    <span class="productname">
+                                        Daal Masoor 500 grams
+                                    </span>
+                                    <span class="price">
+                                        <br><small><small>Rating: 4.44</small><br>Price=$549<br></small>
+
+                                    </span>
+                                </a>
+                            </h2>
+                        </div>
+                    </li>
+
+                    <li>
+                        <div class="phoneimg">
+                            <a class="imglink" href="#phone22>">
+                                <img src="https://dummyjson.com/image/i/products/22/thumbnail.jpg">
+                            </a>
+                        </div>
+                        <div class="phonetext">
+                            <h2>
+                                <a class="links" href="#phone22">
+                                    <span class="productname">
+                                        Elbow Macaroni - 400 gm
+                                    </span>
+                                    <span class="price">
+                                        <br><small><small>Rating: 4.57</small><br>Price=$549<br></small>
+
+                                    </span>
+                                </a>
+                            </h2>
+                        </div>
+                    </li>
+
+                    <li>
+                        <div class="phoneimg">
+                            <a class="imglink" href="#phone23>">
+                                <img src="https://dummyjson.com/image/i/products/23/thumbnail.jpg">
+                            </a>
+                        </div>
+                        <div class="phonetext">
+                            <h2>
+                                <a class="links" href="#phone23">
+                                    <span class="productname">
+                                        Orange Essence Food Flavou
+                                    </span>
+                                    <span class="price">
+                                        <br><small><small>Rating: 4.85</small><br>Price=$549<br></small>
+
+                                    </span>
+                                </a>
+                            </h2>
+                        </div>
+                    </li>
+
+                    <li>
+                        <div class="phoneimg">
+                            <a class="imglink" href="#phone24>">
+                                <img src="https://dummyjson.com/image/i/products/24/1.jpg">
+                            </a>
+                        </div>
+                        <div class="phonetext">
+                            <h2>
+                                <a class="links" href="#phone24">
+                                    <span class="productname">
+                                        Cereals Muesli Fruit Nuts
+                                    </span>
+                                    <span class="price">
+                                        <br><small><small>Rating: 4.94</small><br>Price=$549<br></small>
+
+                                    </span>
+                                </a>
+                            </h2>
+                        </div>
+                    </li>
+
+                    <li>
+                        <div class="phoneimg">
+                            <a class="imglink" href="#phone25>">
+                                <img src="https://dummyjson.com/image/i/products/25/thumbnail.jpg">
+                            </a>
+                        </div>
+                        <div class="phonetext">
+                            <h2>
+                                <a class="links" href="#phone25">
+                                    <span class="productname">
+                                        Gulab Powder 50 Gram
+                                    </span>
+                                    <span class="price">
+                                        <br><small><small>Rating: 4.87</small><br>Price=$549<br></small>
+
+                                    </span>
+                                </a>
+                            </h2>
+                        </div>
+                    </li>
+
+                    <li>
+                        <div class="phoneimg">
+                            <a class="imglink" href="#phone26>">
+                                <img src="https://dummyjson.com/image/i/products/26/thumbnail.jpg">
+                            </a>
+                        </div>
+                        <div class="phonetext">
+                            <h2>
+                                <a class="links" href="#phone26">
+                                    <span class="productname">
+                                        Plant Hanger For Home
+                                    </span>
+                                    <span class="price">
+                                        <br><small><small>Rating: 4.08</small><br>Price=$549<br></small>
+
+                                    </span>
+                                </a>
+                            </h2>
+                        </div>
+                    </li>
+
+                    <li>
+                        <div class="phoneimg">
+                            <a class="imglink" href="#phone27>">
+                                <img src="https://dummyjson.com/image/i/products/27/thumbnail.webp">
+                            </a>
+                        </div>
+                        <div class="phonetext">
+                            <h2>
+                                <a class="links" href="#phone27">
+                                    <span class="productname">
+                                        Flying Wooden Bird
+                                    </span>
+                                    <span class="price">
+                                        <br><small><small>Rating: 4.41</small><br>Price=$549<br></small>
+
+                                    </span>
+                                </a>
+                            </h2>
+                        </div>
+                    </li>
+
+                    <li>
+                        <div class="phoneimg">
+                            <a class="imglink" href="#phone28>">
+                                <img src="https://dummyjson.com/image/i/products/28/thumbnail.jpg">
+                            </a>
+                        </div>
+                        <div class="phonetext">
+                            <h2>
+                                <a class="links" href="#phone28">
+                                    <span class="productname">
+                                        3D Embellishment Art Lamp
+                                    </span>
+                                    <span class="price">
+                                        <br><small><small>Rating: 4.82</small><br>Price=$549<br></small>
+
+                                    </span>
+                                </a>
+                            </h2>
+                        </div>
+                    </li>
+
+                    <li>
+                        <div class="phoneimg">
+                            <a class="imglink" href="#phone29>">
+                                <img src="https://dummyjson.com/image/i/products/29/1.jpg">
+                            </a>
+                        </div>
+                        <div class="phonetext">
+                            <h2>
+                                <a class="links" href="#phone29">
+                                    <span class="productname">
+                                        Handcraft Chinese style
+                                    </span>
+                                    <span class="price">
+                                        <br><small><small>Rating: 4.44</small><br>Price=$549<br></small>
+
+                                    </span>
+                                </a>
+                            </h2>
+                        </div>
+                    </li>
+
+                    <li>
+                        <div class="phoneimg">
+                            <a class="imglink" href="#phone30>">
+                                <img src="https://dummyjson.com/image/i/products/30/thumbnail.jpg">
+                            </a>
+                        </div>
+                        <div class="phonetext">
+                            <h2>
+                                <a class="links" href="#phone30">
+                                    <span class="productname">
+                                        Key Holder
+                                    </span>
+                                    <span class="price">
+                                        <br><small><small>Rating: 4.92</small><br>Price=$549<br></small>
+
+                                    </span>
+                                </a>
+                            </h2>
+                        </div>
+                    </li>
+
+                
 
 
-            <script src="list.js"></script>
-    </section>
+                    
+                </ul>
+                
+
+
+                <script src="list.js"></script>
+        </section>
+    </div>
 </body>
 </html>
